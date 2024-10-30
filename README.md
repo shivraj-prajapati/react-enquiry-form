@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# React Enquiry Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple enquiry form built using React and Bootstrap. The form allows users to enter details such as name, email, phone, and message. Users can submit new entries, edit existing entries, and delete entries as needed. Form validation is implemented to check if the email or phone number already exists in the list. Notifications for successful or failed actions are handled with `react-toastify`.
 
-## Available Scripts
+## Features
+- Add new enquiry with details (name, email, phone, message).
+- Edit or delete existing entries in a table.
+- Prevent duplicate entries based on email or phone number.
+- Real-time notifications with `react-toastify`.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+1. Clone the repository
+   ```bash
+   git clone https://github.com/shivraj-prajapati/react-enquiry-form.git
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project directory
+   ```bash
+   cd react-enquiry-form
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install dependencies
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Start the development server
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+2. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Code Explanation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Components
+1. **Form Input Fields**:
+   - Uses controlled components for form inputs to manage and track form data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **User Data Table**:
+   - Dynamically displays a table with entries and provides Edit and Delete actions for each entry.
 
-### `npm run eject`
+3. **Notifications**:
+   - `react-toastify` is used for real-time notifications to enhance user feedback on actions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### State Variables
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `formData`: Stores the current form values including `name`, `email`, `phone`, `message`, and `index`.
+- `userDatas`: Array storing all enquiry records.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Key Functions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **getvalue**: Handles input changes and updates the `formData` state.
+- **handleSubmit**: Validates data, prevents duplicate entries, and adds/updates entries in `userDatas`.
+- **deleteRow**: Deletes an entry from the table.
+- **editRow**: Populates the form with data from a selected entry to allow editing.
 
-## Learn More
+## Technologies Used
+- React
+- Bootstrap
+- React Bootstrap Components
+- React Toastify
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
+**Shivraj Prajapati**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute to this project or report issues if any.
+```
