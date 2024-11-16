@@ -9,53 +9,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Table from "react-bootstrap/Table";
 
-// function App() {
-//   let [username, setUsername] = useState("");
-//   let [password, setPassword] = useState("");
-
-//   let handleSubmit = (event) => {
-//     event.preventDefault();
-//     console.log("Username: ", username);
-//     console.log("Password: ", password);
-//   }
-
-//   return (
-//     <div className="App">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-lg-6">
-//             <form action="" onSubmit={handleSubmit}>
-//               <div className="text-start my-3 ">
-//                 <label>User-Name</label>
-//                 <input
-//                   onChange={(event) => setUsername(event.target.value)}
-//                   type="text"
-//                   placeholder="Enter your username.."
-//                   className="form-control"
-//                   value={username}
-//                   />
-//               </div>
-//               <div className="text-start my-3 ">
-//                 <label>Password</label>
-//                 <input
-//                   onChange={(event) => setPassword(event.target.value)}
-//                   type="password"
-//                   placeholder="Enter your password.."
-//                   className="form-control"
-//                   value={password}
-//                 />
-//               </div>
-//               <div className="text-start my-3 ">
-//                 <button className="btn btn-primary">Login</button>
-//               </div>
-//             </form>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 function App() {
   let [formData, setFormData] = useState({
     name: "",
