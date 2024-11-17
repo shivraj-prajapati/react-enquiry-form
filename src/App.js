@@ -52,8 +52,8 @@ function App() {
     } else {
       // Edit existing user scenario
       let editIndex = formData.index;
-      let updatedUserDatas = [...userDatas]; // Copy the array to maintain immutability
-      updatedUserDatas[editIndex] = currentUserFormData; // Update the user at the correct index
+      let updatedUserDatas = [...userDatas]; 
+      updatedUserDatas[editIndex] = currentUserFormData;
       setUserDatas(updatedUserDatas);
     }
 
